@@ -1,0 +1,7 @@
+
+
+- Do not decreases cubeness value below 1 b/c it crashes ! I have not resolves the issue yet.
+- Instead you can play with magnitude of the vector image.
+- Here is how I got some reasonable results:
+      ./scalarListImgToVecImg scalarImg.lst vecImg.nii.gz magImg.nii.gz 100
+      ./supervoxel_test  vecImg.nii.gz labelImg.nii.gz  10  10
